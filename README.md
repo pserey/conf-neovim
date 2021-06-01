@@ -8,11 +8,13 @@ Minhas configurações de neovim para *python* e *java*
 
 ```
 sudo snap install --edge nvim --classic 
+python3 -m pip install pynvim
 sudo apt install xsel
 sudo apt install npm
 sudo apt install git
 sudo apt install nodejs
 ```
+> neovim deve ser instalado com snap pois se instalado com apt a versão padrão é desatualizada para um dos plugins
 
 ## NodeJS não vem na última versão então tem que atualizar para a mais recente:
 
@@ -22,13 +24,9 @@ sudo npm install -g n
 sudo n latest (comando para atualizar para o nodejs 12)
 ```
 
-```
-python3 -m pip install pynvim
-```
-
 ## Criar diretórios de organização do neovim
 
-pasta “nvim” dentro de ~/.config:
+pasta `nvim` dentro de `~/.config`:
 
 
 ## Criação de diretórios:
@@ -42,6 +40,8 @@ mkdir keys
 ```
 
 ## Criação de arquivos:
+Baixe meus arquivos de configuração ou:
+<p></p>
 De dentro da pasta nvim:
 ```
 touch init.vim
@@ -56,8 +56,7 @@ Sua estrutura de diretórios deve ficar assim:
 
 ## Instalar gerenciador de plugins
 
-basta dar os dois comandos abaixo:
-
+É apenas dar ambos os comandos abaixo no terminal
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -65,10 +64,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
-Copiar o texto dos arquivos de configurações ou baixar meus arquivos do repositório.
-
-
 
 ## Instalar plugins
 _comando para ser rodado dentro do nvim_
