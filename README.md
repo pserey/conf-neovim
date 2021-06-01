@@ -63,7 +63,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-Copiar as configurações para os arquivos plugins.vim, general.vim, mappings.vim e init.vim
+Copiar o texto dos arquivos de configurações ou baixar meus arquivos do repositório.
 
 
 
