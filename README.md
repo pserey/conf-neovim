@@ -48,7 +48,7 @@ touch keys/mappings.vim
 ```
 Sua estrutura de diretórios deve ficar assim:
 <p>
-<img width="500" height="400" src="/assets/treefolders.png">
+<img width="500" height="300" src="/assets/treefolders.png">
 </p>
 
 ## Instalar gerenciador de plugins
