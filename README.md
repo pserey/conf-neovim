@@ -1,7 +1,7 @@
 # Configurações de neovim
 Minhas configurações de neovim para *python* e *java*
 
-<img src="/assets/printgeralvim.png" width="45%" />
+<img src="/assets/printgeralvim.png" width="85%" />
 
 
 ## Instalar software que vai servir de base (já deve ter python e pip instalado)
