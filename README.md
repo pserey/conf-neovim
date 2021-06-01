@@ -1,6 +1,9 @@
 # Configurações de neovim
 Minhas configurações de neovim para *python* e *java*
 
+<img src="/assets/printgeralvim.png" width="45%" />
+
+
 ## Instalar software que vai servir de base (já deve ter python e pip instalado)
 
 ```
@@ -75,6 +78,9 @@ _comando para ser rodado dentro do nvim_
 ```
 
 ## Instalar as extensões de autocompleção para as linguagens 
+
+<img alt="Gif" src="https://user-images.githubusercontent.com/251450/55285193-400a9000-53b9-11e9-8cff-ffe4983c5947.gif" width="60%" />
+
 _comando para ser rodado dentro do nvim_
 ```
 :CocInstall coc-pyright
