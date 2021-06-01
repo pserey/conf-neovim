@@ -1,7 +1,7 @@
-# conf-neovim-pedro
-My neovim configuration files and instalation tutorial
+# Configurações de neovim
+Minhas configurações de neovim para python
 
-Instalar software que vai servir de base (já deve ter python e pip instalado)
+## Instalar software que vai servir de base (já deve ter python e pip instalado)
 
 ```
 sudo apt install neovim
@@ -11,7 +11,7 @@ sudo apt install git
 sudo apt install nodejs
 ```
 
-NodeJS não vem na última versão então tem que atualizar para a mais recente:
+## NodeJS não vem na última versão então tem que atualizar para a mais recente:
 
 ```
 sudo npm cache clean -f
@@ -23,12 +23,12 @@ sudo n latest (comando para atualizar para o nodejs 12)
 python3 -m pip install pynvim
 ```
 
-Criar diretórios de organização do neovim
+## Criar diretórios de organização do neovim
 
 pasta “nvim” dentro de ~/.config:
 
 
-Criação de diretórios:
+## Criação de diretórios:
 
 ```
 mkdir ~/.config/nvim
@@ -38,15 +38,20 @@ mkdir plugins
 mkdir keys
 ```
 
-Criação de arquivos:
+## Criação de arquivos:
+De dentro da pasta nvim:
 ```
 touch init.vim
 touch general/settings.vim
 touch plugins/plugins.vim
 touch keys/mappings.vim
 ```
+Sua estrutura de diretórios deve ficar assim:
+<p>
+<img width="500" height="400" src="/assets/treefolders.png">
+</p>
 
-Instalar gerenciador de plugins
+## Instalar gerenciador de plugins
 
 basta dar os dois comandos abaixo:
 
@@ -62,7 +67,7 @@ Copiar as configurações para os arquivos plugins.vim, general.vim, mappings.vi
 
 
 
-Instalar plugins
+## Instalar plugins
 
 começar a editar o arquivo plugins.vim dentro de plugins com nvim
 dentro do nvim, dar os seguintes comandos:
@@ -72,7 +77,7 @@ dentro do nvim, dar os seguintes comandos:
 :PlugInstall
 ```
 
-e, finalmente, instalar a autocompleção:
+## E, finalmente, instalar a autocompleção:
 (dentro do nvim)
 
 ```
