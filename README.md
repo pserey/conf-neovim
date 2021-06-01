@@ -1,10 +1,10 @@
 # Configurações de neovim
-Minhas configurações de neovim para python
+Minhas configurações de neovim para *python* e *java*
 
 ## Instalar software que vai servir de base (já deve ter python e pip instalado)
 
 ```
-sudo apt install neovim
+sudo snap install --edge nvim --classic 
 sudo apt install xsel
 sudo apt install npm
 sudo apt install git
@@ -68,19 +68,32 @@ Copiar o texto dos arquivos de configurações ou baixar meus arquivos do reposi
 
 
 ## Instalar plugins
-
-começar a editar o arquivo plugins.vim dentro de plugins com nvim
-dentro do nvim, dar os seguintes comandos:
-
+_comando para ser rodado dentro do nvim_
 ```
 :so %
 :PlugInstall
 ```
 
-## E, finalmente, instalar a autocompleção:
-(dentro do nvim)
-
+## Instalar as extensões de autocompleção para as linguagens 
+_comando para ser rodado dentro do nvim_
 ```
-:CocInstall coc-pyright (precisa de npm)
+:CocInstall coc-pyright
+:CocInstall coc-java
 ```
 
+## Links para repositórios de plugins e afins
+
+- Neovim
+https://github.com/neovim/neovim#install-from-source
+
+- vim-plug
+https://github.com/junegunn/vim-plug
+
+- coc.nvim
+https://github.com/neoclide/coc.nvim
+
+- Gruvbox (paleta de cores que uso)
+https://github.com/morhetz/gruvbox
+
+- Treesitter (highliting melhorado)
+https://github.com/nvim-treesitter/nvim-treesitter
