@@ -42,7 +42,7 @@ cp -rf conf-neovim/nvim/ ~/.config/
 
 :CocInstall <any language extension you want>
 ```
-For knowing more **coc.nvim** extensions check [this link](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions).
+> For knowing more **coc.nvim** extensions check [this link](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions).
 
 - And finally, configure your JAVA_HOME path in `coc-settings.json`
 ```
