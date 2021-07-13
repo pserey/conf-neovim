@@ -44,6 +44,18 @@ cp -rf conf-neovim/nvim/ ~/.config/
 ```
 For knowing more **coc.nvim** extensions check [this link](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions).
 
+- And finally, configure your JAVA_HOME path in `coc-settings.json`
+```
+# Change the first line to whatever version of Java you are using and change the
+# path to your java in the second line (normally in the same jvm directory)
+
+{
+  "name": "JavaSE-16",
+  "path": "/usr/lib/jvm/java-16-openjdk",
+  "default": true
+}
+```
+
 ## Link to important repos used in this configuration
 
 - [Neovim](https://github.com/neovim/neovim)
