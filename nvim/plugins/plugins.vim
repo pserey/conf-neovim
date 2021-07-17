@@ -14,7 +14,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'glepnir/dashboard-nvim'
 Plug 'honza/vim-snippets'
 Plug 'sirver/ultisnips'
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
