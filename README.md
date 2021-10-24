@@ -1,7 +1,9 @@
 # Neovim config files
 > My *Neovim* configuration files.
 
-<img src="/assets/nvimp-init-example.png" width= "100%" />
+<div align="center">
+  <img src="/assets/nvimp-init-example.png" width= "100%" />
+</div>
 
 
 ## Software requirements before installing
