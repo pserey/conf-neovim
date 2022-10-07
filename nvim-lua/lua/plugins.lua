@@ -1,5 +1,5 @@
 --------------------------------- PLUGIN CONFIGS -------------------------------------
-vim.cmd('colorscheme gruvbox')
+-- comment this out before using Packer.nvim for the first time
 require('config')
 
 --------------------------------- USED PLUGINS -------------------------------------
