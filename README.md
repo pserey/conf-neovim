@@ -65,7 +65,7 @@ cp -rf conf-neovim/nvim-lua/ ~/.config/nvim
 ```
 > For knowing more **coc.nvim** extensions check [this link](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions).
 
-## Configuring (Vimscript)
+## Configuring (Lua)
 - After that, run the following commands inside neovim:
 ```
 :PackerSync # if it gives any errors, just run it again
@@ -109,7 +109,7 @@ cp -rf conf-neovim/nvim-lua/ ~/.config/nvim
 ```
 
 ## If you pretend messing and adapting this configuration...
-If you pretend to adapt this configuration to your taste and needs, consider installing the `lua-language-server` by @sumneko. You can find installing and building instructions here, if you're on Arch or any Arch based distro, you can install [this](https://archlinux.org/packages/community/x86_64/lua-language-server/) arch package:
+If you pretend to adapt this configuration to your taste and needs, consider installing the `lua-language-server` by [@sumneko](https://github.com/sumneko). You can find installing and building instructions here, if you're on Arch or any Arch based distro, you can install [this](https://archlinux.org/packages/community/x86_64/lua-language-server/) arch package:
 ```
 sudo pacman -S lua-language-server
 ```
