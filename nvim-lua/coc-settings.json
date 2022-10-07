@@ -1,0 +1,30 @@
+{
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.noselect": false,
+    "suggest.minTriggerInputLength": 2,
+    "suggest.acceptSuggestionOnCommitCharacter": true,
+    "suggest.snippetIndicator": "►",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "*"
+    ],
+    "diagnostic.messageTarget": "float",
+    "python.analysis.typeCheckingMode": "off",
+    "pyright.inlayHints.enable": false,
+    "java.enabled": true,
+    "java.format.comments.enabled": true,
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.completion.overwrite": true,
+    "java.saveActions.organizeImports": true,
+    "java.completion.enabled": true,
+    "java.import.gradle.enabled": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-16",
+            "path": "/usr/lib/jvm/java-16-openjdk",
+            "default": true
+        }
+    ],
+    "Lua.hint.enable": false,
+    "sumneko-lua.enableNvimLuaDev": true,
+    "Lua.telemetry.enable": false
+}
