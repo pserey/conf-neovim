@@ -96,26 +96,27 @@ db.custom_header = {
     '██╔██╗ ██║██║   ██║██║██╔████╔██║██████╔╝',
     '██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║██╔═══╝ ',
     '██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║██║     ',
-    '╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝     '
+    '╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝     ',
+    'github.com/pserey'
 }
 
 db.custom_center = {
-    { icon = '📝 ',
-        desc = 'Last session',
-        shortcut = ' SPC s l',
+    { icon = '📝  ',
+        desc = 'Last session                     ',
+        shortcut = 'SPC s l',
         action = 'SessionLoad' },
-    { icon = '📂 ',
-        desc = 'Recently opened files',
+    { icon = '📂  ',
+        desc = 'Recently opened files            ',
         shortcut = 'SPC f h',
         action = 'DashboardFindHistory' },
-    { icon = '🗃️ ',
-        desc = 'Find file',
-        shortcut = 'SPC f f',
-        action = 'Telescope find_files find_command=rg,--hidden,--files' },
-    { icon = '🔎 ',
-        desc = 'Find word',
+    { icon = '🔎  ',
+        desc = 'Find word                        ',
         shortcut = 'SPC f w',
         action = 'Telescope live_grep' },
+    { icon = '❓',
+        desc = '  Find file                        ',
+        shortcut = 'SPC f f',
+        action = 'Telescope find_files find_command=rg,--hidden,--files' }
 }
 -- packer bootstrap (SHOULD BE LAST CONFIG)
 local ensure_packer = function()
