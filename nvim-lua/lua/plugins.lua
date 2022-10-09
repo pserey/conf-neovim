@@ -25,5 +25,5 @@ return require('packer').startup(function(use)
     }
     use 'glepnir/dashboard-nvim'
     use 'tpope/vim-commentary'
-    use 'lambdalisue/suda.vim'
+    -- use 'lambdalisue/suda.vim'
 end)

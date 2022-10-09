@@ -117,7 +117,7 @@ db.custom_center = {
         shortcut = 'SPC f w',
         action = 'Telescope live_grep' },
 }
--- packer bootstrap
+-- packer bootstrap (SHOULD BE LAST CONFIG)
 local ensure_packer = function()
     local fn = vim.fn
     local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'

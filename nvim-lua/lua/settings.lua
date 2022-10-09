@@ -26,7 +26,7 @@ vim.cmd("set t_Co=256") -- support to 256 colors
 vim.cmd("set iskeyword+=-") -- treat dash separated words as word text object
 vim.o.termguicolors = true -- required by nvim colorizer
 
---------------------------------- REMAPPING -------------------------------------
+--------------------------------- MAPPING -------------------------------------
 -- I hate escape.
 imap('jk', '<ESC>')
 -- set leader as space
@@ -48,3 +48,7 @@ nmap('x', '"_x')
 -- python autocommands
 local python = vim.api.nvim_create_augroup("Python", { clear = true })
 autocmd({ 'BufNewFile', 'BufRead' }, { pattern = { '*.py' }, command = 'set softtabstop=4', group = python })
+
+--------------------------------- MISCELLANEOUS -------------------------------------
+-- make readonly files editable without root neovim
+vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
