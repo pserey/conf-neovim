@@ -41,9 +41,9 @@ map('n', '<TAB>', ':bnext<CR>')
 map('v', '<', '<gv')
 map('v', '>', '>gv')
 -- mapping enter to coc complete
-vim.cmd([[
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-]])
+vim.cmd([[ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>" ]])
+-- x does not yank
+nmap('x', '"_x')
 --------------------------------- AUTOCOMMANDS -------------------------------------
 -- python autocommands
 local python = vim.api.nvim_create_augroup("Python", { clear = true })
