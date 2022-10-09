@@ -3,7 +3,15 @@
 require('config')
 
 --------------------------------- USED PLUGINS -------------------------------------
-return require('packer').startup(function(use)
+local status, packer = pcall(require, 'packer')
+if (not status) then
+    print('Packer is not installed!')
+    return
+end
+
+vim.cmd([[packadd packer.nvim]])
+
+packer.startup(function(use)
     -- packer can manage itself
     use 'wbthomason/packer.nvim'
     -- colorscheme
