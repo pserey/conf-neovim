@@ -33,5 +33,5 @@ packer.startup(function(use)
     }
     use 'glepnir/dashboard-nvim'
     use 'tpope/vim-commentary'
-    -- use 'lambdalisue/suda.vim'
+    use 'tpope/vim-surround'
 end)
