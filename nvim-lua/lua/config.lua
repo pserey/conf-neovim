@@ -118,6 +118,7 @@ db.custom_center = {
         shortcut = 'SPC f f',
         action = 'Telescope find_files find_command=rg,--hidden,--files' }
 }
+-- coc config
 -- packer bootstrap (SHOULD BE LAST CONFIG)
 local ensure_packer = function()
     local fn = vim.fn

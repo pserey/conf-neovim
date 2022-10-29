@@ -34,4 +34,7 @@ packer.startup(function(use)
     use 'glepnir/dashboard-nvim'
     use 'tpope/vim-commentary'
     use 'tpope/vim-surround'
+    -- haskell ghcup with neovim
+    use 'rbgrouleff/bclose.vim'
+    use 'hasufell/ghcup.vim'
 end)
