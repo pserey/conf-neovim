@@ -2,9 +2,13 @@
 > My *Neovim* configuration files.
 
 <div align="center">
-  <img src="/assets/nvimp-init-example.png" width= "100%" />
+  <img src="/assets/nvimp-new-version-example.png" width= "100%" />
 </div>
 
+<div>
+    <img src="/assets/code-example.png" width= "49.7%" />
+    <img src="/assets/code-example-2.png" width= "49.7%" align="right"/>
+</div>
 
 ## Software requirements before installing
 
@@ -78,6 +82,9 @@ cp -rf conf-neovim/nvim-lua/ ~/.config/nvim
 
 # install coc.nvim extension that complete pairs
 :CocInstall coc-pairs
+
+# install markdown coc.nvim extension
+:CocInstall coc-markdown
 
 # install lua coc.nvim extension (install it if you pretend to mess with configs)
 :CocInstall coc-sumneko-lua
