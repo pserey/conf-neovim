@@ -42,6 +42,13 @@ map('v', '<', '<gv')
 map('v', '>', '>gv')
 -- mapping enter to coc complete
 vim.cmd([[ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>" ]])
+-- coc mappings
+nmap('<leader>rn', '<Plug>(coc-rename)')
+nmap('gd', '<Plug>(coc-definition)')
+nmap('gy', '<Plug>(coc-type-definition)')
+nmap('gi', '<Plug>(coc-implementations)')
+nmap('gr', '<Plug>(coc-references)')
+nmap('md', ':CocCommand markdown-preview-enhanced.openPreview<CR>')
 -- x does not yank
 nmap('x', '"_x')
 --------------------------------- AUTOCOMMANDS -------------------------------------

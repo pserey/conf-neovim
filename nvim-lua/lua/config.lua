@@ -1,5 +1,15 @@
+local highlight = require "vim.highlight"
 -- colorscheme
 vim.cmd('colorscheme gruvbox')
+-- suda vim automatic sudo in protected files
+vim.cmd([[let g:suda_smart_edit = 1]])
+-- treesitter
+require('nvim-treesitter.configs').setup {
+    ensure_installed = { 'python', 'lua', 'java', 'c', 'vim', 'make' },
+    highlight = {
+        enable = true,
+    },
+}
 -- lualine
 require('lualine').setup {
     options = {
@@ -118,7 +128,6 @@ db.custom_center = {
         shortcut = 'SPC f f',
         action = 'Telescope find_files find_command=rg,--hidden,--files' }
 }
--- coc config
 -- packer bootstrap (SHOULD BE LAST CONFIG)
 local ensure_packer = function()
     local fn = vim.fn
