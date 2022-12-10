@@ -49,6 +49,10 @@ nmap('gy', '<Plug>(coc-type-definition)')
 nmap('gi', '<Plug>(coc-implementations)')
 nmap('gr', '<Plug>(coc-references)')
 nmap('md', ':CocCommand markdown-preview-enhanced.openPreview<CR>')
+
+-- delete buffer
+nmap('<leader>bd', ':bd<CR>')
+
 -- x does not yank
 nmap('x', '"_x')
 --------------------------------- AUTOCOMMANDS -------------------------------------
