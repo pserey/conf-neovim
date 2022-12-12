@@ -121,6 +121,34 @@ If you pretend to adapt this configuration to your taste and needs, consider ins
 sudo pacman -S lua-language-server
 ```
 
+Besides that, the confg directories are in the following structures
+
+- *Lua* config
+```
+nvim/
+├── coc-settings.json      | coc.nvim settings
+├── init.lua               | requiring of lua config files
+└── lua
+    ├── config.lua         | plugin configurations
+    ├── plugins.lua        | plugin listing
+    ├── settings.lua       | general settings + keymappings
+    └── utils.lua          | lua functions to simpler use of vim library
+```
+
+- *Vimscript* config
+```
+nvim/
+├── coc-settings.json      | coc.nvim settings
+├── general
+│   └── settings.vim       | general settings
+├── init.vim
+├── keys
+│   └── mappings.vim       | keymappings
+└── plugins
+    └── plugins.vim        | plugin listing + configurations
+```
+
+
 ## Link to important repos used in this configuration
 
 - [Neovim](https://github.com/neovim/neovim)
