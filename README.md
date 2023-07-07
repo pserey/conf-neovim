@@ -84,7 +84,7 @@ cp -rf conf-neovim/nvim-lua/ ~/.config/nvim
 :CocInstall coc-pairs
 
 # install markdown coc.nvim extension
-:CocInstall coc-markdown
+:CocInstall coc-markdown-preview-enhanced
 
 # install lua coc.nvim extension (install it if you pretend to mess with configs)
 :CocInstall coc-sumneko-lua
