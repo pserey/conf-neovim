@@ -36,5 +36,6 @@
     ],
     "Lua.diagnostics.disable": [
         "lowercase-global"
-    ]
+    ],
+    "webview.openCommand": "brave-nightly \"%u\""
 }
