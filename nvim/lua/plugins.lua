@@ -58,29 +58,40 @@ return require('packer').startup(function(use)
       run = function()
         pcall(vim.cmd, 'MasonUpdate')
       end,
-    },
-    {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},     -- Required
-    {'hrsh7th/cmp-nvim-lsp'}, -- Required
-    {'hrsh7th/cmp-nvim-lua'},
-    {
-      'L3MON4D3/LuaSnip',
-      tag = 'v2.*',
-      requires = {
-        {'rafamadriz/friendly-snippets'}
       },
-      run = 'make install_jsregexp'
-    },
-    {'saadparwaiz1/cmp_luasnip'},
-    {'FelipeLema/cmp-async-path'}
-  },
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'hrsh7th/cmp-nvim-lua'},
+      {
+        'L3MON4D3/LuaSnip',
+        tag = 'v2.*',
+        requires = {
+          {'rafamadriz/friendly-snippets'}
+        },
+        run = 'make install_jsregexp'
+      },
+      {'saadparwaiz1/cmp_luasnip'},
+      {'FelipeLema/cmp-async-path'}
+    }
+  }
 
   -- vim commentary
-  use 'tpope/vim-commentary',
+  use 'tpope/vim-commentary'
 
   -- markdown preview
-  use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' }),
-}
+  use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
+
+  -- nvim tree
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    }
+  }
+
+  -- terminal screen split
+  use { "akinsho/toggleterm.nvim", tag = '*' }
 end)

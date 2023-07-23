@@ -53,6 +53,11 @@ Nmap('<leader>bd', ':bd!<CR>')
 -- x does not yank
 Nmap('x', '"_x')
 
+-- remap vim tabs navigations
+vim.cmd([[nnoremap <C-a> <C-w>]])
+
+Nmap('<leader>c', ':close<CR>')
+
 --------------------------------- AUTOCOMMANDS -------------------------------------
 -- python autocommands
 local python = Augroup("Python")

@@ -1,5 +1,8 @@
-function Map(mode, shortcut, command)
-    vim.keymap.set(mode, shortcut, command, { silent = true })
+function Map(mode, shortcut, command, opts)
+    local func_opts = opts or { silent = true }
+    func_opts['silent'] = true
+
+    vim.keymap.set(mode, shortcut, command, func_opts)
 end
 
 function Imap(shorcut, command)
