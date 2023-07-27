@@ -21,3 +21,7 @@ function Augroup(group_name)
     local group = vim.api.nvim_create_augroup(group_name, { clear = true })
     return group
 end
+
+function Command(cmd, func)
+  vim.api.nvim_create_user_command(cmd, func)
+end

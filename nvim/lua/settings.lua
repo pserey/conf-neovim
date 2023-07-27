@@ -54,9 +54,8 @@ Nmap('<leader>bd', ':bd!<CR>')
 Nmap('x', '"_x')
 
 -- remap vim tabs navigations
-vim.cmd([[nnoremap <C-a> <C-w>]])
-
 Nmap('<leader>c', ':close<CR>')
+vim.cmd([[nnoremap <C-a> <C-w>]])
 
 --------------------------------- AUTOCOMMANDS -------------------------------------
 -- python autocommands

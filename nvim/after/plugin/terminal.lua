@@ -5,4 +5,5 @@ require('toggleterm').setup({
 
 -- keybindings to control terminal
 Nmap('<leader>t', ':ToggleTerm<CR>')
-Map('t', 'jk', [[<C-\><C-n>]], { buffer = 0 })
+vim.cmd([[tnoremap jk <C-\><C-n>]])
+vim.cmd([[tnoremap <Esc> <C-\><C-n>]])

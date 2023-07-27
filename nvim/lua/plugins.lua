@@ -94,4 +94,14 @@ return require('packer').startup(function(use)
 
   -- terminal screen split
   use { "akinsho/toggleterm.nvim", tag = '*' }
+
+  -- debugging in neovim
+  use { 'ChristianChiarulli/neovim-codicons' }
+  use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
+  use { 'ldelossa/nvim-dap-projects' }
+  use { 'folke/neodev.nvim', config = function ()
+    require('neodev').setup({
+      library = { plugins = { 'nvim-dap-ui' }, types = true }
+    })
+  end}
 end)
