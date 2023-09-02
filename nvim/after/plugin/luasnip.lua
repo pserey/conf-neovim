@@ -62,7 +62,9 @@ ls.add_snippets('lua', {
 })
 ls.add_snippets('python', {
   ls.parser.parse_snippet('pdb', 'import pdb; pdb.set_trace()'),
-  ls.parser.parse_snippet('init', 'def __init__(self, $1):\n    ${2|pass|}')
+  ls.parser.parse_snippet('init', 'def __init__(self, $1):\n    ${2|pass|}'),
+  ls.parser.parse_snippet('inps', 'input().split()'),
+  ls.parser.parse_snippet('mlist', 'list(map(int, input().split()))'),
 })
 ls.add_snippets('cpp', {
   ls.parser.parse_snippet('cmain', 'int main() {\n    $1\n\n    return 0;\n}'),

@@ -99,6 +99,7 @@ return require('packer').startup(function(use)
   use { 'ChristianChiarulli/neovim-codicons' }
   use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
   use { 'ldelossa/nvim-dap-projects' }
+  use 'theHamsta/nvim-dap-virtual-text'
   use { 'folke/neodev.nvim', config = function ()
     require('neodev').setup({
       library = { plugins = { 'nvim-dap-ui' }, types = true }

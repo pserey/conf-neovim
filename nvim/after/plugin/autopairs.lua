@@ -8,4 +8,6 @@ npairs.add_rules({
   Rule("=f'", "'", {'py', 'python'}),
   Rule("=r'", "'", {'py', 'python'}),
   Rule("=b'", "'", {'py', 'python'}),
+  Rule("$", "$", {'md', 'markdown'}),
+  Rule("*", "*", {'md', 'markdown'}),
 })
